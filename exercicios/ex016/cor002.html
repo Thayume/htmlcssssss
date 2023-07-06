@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiente em CSS</title>
+ <!-- para fazermos degrades não usamos backgroun-color e sim brackgroud-image -->
+ <!-- para fazer configuração global da css usa-se * e depois {} para o que queremos -->
+ 
+ <style>
+    *{
+        height: 100%;
+    }
+    body{
+        background-image: linear-gradient(to right, #6514FF, #3C3CAB, #0057F7, #0B9FE0, #0DFFF5 45%);/* primeiro falamos a direção e depois escolhemos quantas cores quisermos */
+        background-attachment: fixed;/* para o scroll ficar fixo o fundo */
+    }
+ </style>
+</head>
+<body>
+    <h1>Testando Gradiente</h1>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>links</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+          color: blueviolet ;
+          text-decoration: none;
+          font-weight: bolder;
+        }
+        a:visited{
+            color: aqua
+        }
+        a:hover{
+            color: rgb(87, 77, 96);
+            text-decoration: underline;
+        }
+        a:active{
+            color: brown;
+        }
+        a::after {
+            content: '  [link]';
+            text-decoration: none;
+            font-weight: normal;
+            color: cadetblue;
+
+        }
+        .especial::before { 
+            content: '😨';
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://www.youtube.com" target="_blank"  >youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com" target="_blank"  class="especial">site</a></li>
+        <li><a href="https://github.com/" target="_blank">github</a></li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grouping tags</title>
+    <!-- clicar em inspecionar e depois em devtools -->
+
+    <style>
+        body{
+            background-color: rgb(132, 127, 127);
+            text-align: center;
+        }
+        header{
+           
+            background-color: aliceblue;
+            margin: 10px;
+            padding: 10px;
+        }
+        main{
+            background-color: rgb(177, 174, 169);
+            border-radius: 20px;
+        }
+        nav{
+            background-color: rgb(183, 181, 178);
+            padding: 3px;
+            box-shadow: 1px 1px 4px 1px black;
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: bisque;
+            font-weight: bolder;
+            margin-right: 30px;
+          
+        }
+        nav > a:hover {
+            color: blueviolet;
+            text-decoration: underline;
+           
+
+        } 
+        footer{
+            background-color: black;
+            color: antiquewhite;
+            text-align: center;
+        }
+        div#bola{
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: blue;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+ <header>
+    <h1>site thaisinha</h1>
+    <nav>
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+    </nav>
+ </header>
+ <main>
+    <section id="assuntos">
+        <article>
+            <h2>notícias sobre o bozonaru</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi aperiam aut, dicta quaerat consectetur, provident reprehenderit molestias, cum voluptas autem rem magni amet qui et nisi fugit earum impedit. Distinctio!</p>
+            <aside>artigo escrito por eu</aside>
+        </article>
+    </section>
+
+    <section id="thaisinha"></section>
+ </main>
+ <footer>
+    <p>desenvolvido por mim</p>
+ </footer>
+ <div id="bola"></div>
+
+</body>
+</html>
