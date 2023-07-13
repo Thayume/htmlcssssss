@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 400px;
+            height: 400px;
+            border-collapse: collapse;
+            border: 5px solid rgb(67, 81, 159);
+        }
+
+        tr.linha {
+            background-color: gray;
+
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;/* alinhamento horizontal */
+            vertical-align: bottom; /* alinhamento vertical */
+        }
+
+        td.dado{
+            background-color: blueviolet;
+        }
+
+        .alinhamento{
+            text-align: right;
+            vertical-align: top;
+        }
+    </style>
+</head>
+<body>
+    <h1>Minha primeira Tabela</h1>
+    <!-- hierarquia de tabelas
+        table = tabela
+            table row = linha de tabela = tr
+                table header = cabeçalho de tabela = th
+                table data = dado da tabela = td
+     -->
+    <table>
+        <tr class="linha"> <!-- primeira linha -->
+            <td>a1
+            <td>b1
+            <td>c1
+        
+                <!-- td e tr não precisam de fechamento mas é aconselhavel que feche para não nos confundirmos -->
+
+        <tr>
+            <td class="dado">a2</td>
+            <td>b2</td>
+            <td class="alinhamento">c2</td>
+        </tr>
+
+        <tr>
+            <td>a3</td>
+            <td>b3</td>
+            <td>c3</td>
+      </tr>
+
+    </table>
+</body>
+</html>
