@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        caption {
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        .nome {
+            background-color: aquamarine;
+        }
+
+        .sexo {
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h1>exercícios de tabela</h1>
+
+    <table>
+
+        <colgroup>
+            <col class="nome">
+            <col class="sexo" span="2">
+            <!-- serve para ocupar 2 colunas o span -->
+            
+            <col class="profissao">
+        </colgroup>
+        
+        <caption>Cadastro</caption>
+
+        <tr>
+            <th scope="col">nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">profissão</th>
+        </tr>
+
+        <tr>
+            <td>ana maria</td>
+            <td>F</td>
+            <td>55</td>
+            <td>Analista</td>
+        </tr>
+
+        <tr>
+            <td>ana maria</td>
+            <td>F</td>
+            <td>55</td>
+            <td>Analista</td>
+        </tr>
+
+        <tr>
+            <td>ana maria</td>
+            <td>F</td>
+            <td>55</td>
+            <td>Analista</td>
+        </tr>
+        <tr>
+            <td>ana maria</td>
+            <td>F</td>
+            <td>55</td>
+            <td>Analista</td>
+        </tr>
+
+
+        
+
+    </table>
+
+
+    
+</body>
+</html>
