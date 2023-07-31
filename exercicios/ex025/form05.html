@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulário</title>
+</head>
+<body>
+    <h1>Exemplo formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+
+        <fieldset>
+            <legend>sexo</legend>
+
+            <input type="radio" name="sexo" id="masc" value="M"><label for="masc">Masculino</label>
+
+            <input type="radio" name="sexo" id="fem" value="F"><label for="fem">Feminino</label>
+
+            <!-- Para a bolinha marcada não ter a opcão de marcar duas ao mesmo tempo sem apagar tem que colocar o mesmo name para os dois -->
+
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+
+            <input type="checkbox" name="fut" id="ifut"><label for="ifut">Futebol</label>
+
+            <input type="checkbox" name="bas" id="ibas" checked ><label for="ibas">Baquete</label> <br>
+
+            <!-- Para já deixar uma opção marcada utilizar a função checked -->
+            <br>
+
+            <input type="checkbox" name="nat" id="inat">Natação
+
+            <input type="checkbox" name="ten" id="iten">Tênis
+
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+</body>
+</html>
